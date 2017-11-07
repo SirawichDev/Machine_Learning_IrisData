@@ -40,4 +40,4 @@ class Perceptron(object):
 
         """
         rgen = np.random.RandomState(self.random_state)
-        self.w_ =
+        self.w_ = rgen.normal(loc = 0.0, size=1+X.shape[1])
